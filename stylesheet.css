@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+/*width akan menyertakan padding dan border*/
+*{
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.fa {
+  margin-right: 5px;
+}
+.clear{
+  clear: left;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* menangani tampilan logo di header dan footer*/
+.logo {
+  width: 120px;
+  margin-top: 20px;
+}
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+/* menangani tampilan banner*/
+.banner {
+  padding: 180px 0 100px 0;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  color: yellow;
+  text-align: center;
+}
+/*CSS untuk menu-icon */
+.menu-icon {
+  display: none;
+  color: yellow;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+
+}
+.heading {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+  text-align: center;
+}
+
+.heading h2 {
+  font-weight: normal;
+  text-align: center;
+}
+
+.tourisms {
+  padding-bottom: 80px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.tourism {
+    float: left;
+    width: 25%;
+}
+.tourism-icon{
+
+  width: 200px;
+  background-color:#f2f2f2;
+}
+.tourism img{
+  width: 200px;
+}
+.tourism img:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: 4;
+}
+.title{
+font-family:sans-serif;
+margin:5px 0 5px 0;
+
+}
+.sub-title{
+  height: 25px;
+  width: 100%;
+
+}
+.sub-left{
+  float: left;
+
+  color:#a6a6a6;
+  font-size: 14px;
+  margin:5px 0 0 0;
+
+}
+.sub-right{
+  float: right;
+  padding-right: 10px;
+  color: #00cc99;
+}
+.description{
+  text-align: left;
+
+}
+.days{
+background-color:  #00cccc;
+padding: 10px 10px;
+color:white;
+font-family: "Comic Sans MS";
+
+}
+.details{
+  color:#a6a6a6;
+  font-size: 10px;
+  height: 50px;
+
+}
+
+.teams{
+
+  padding-bottom: 0px;
+  padding-top: 0px;
+  text-align: center;
+
+}
+.team{
+  float: left;
+  width: 25%;
+}
+footer {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+.footer-right {
+  float:right;
+  color:white;
+}
+@keyframes dtspro2 {
+  0%   {left:0px;}
+  10%  {left:70px;transform: rotate(10deg)}
+  20%  {left:140px;transform: rotate(0deg)}
+  30% {left:210px;transform: rotate(10deg)}
+  40% {left:280px;transform: rotate(0deg);}
+  50% {left:350px;transform: rotate(10deg)}
+  60% {left:420px;transform: rotate(0deg)}
+  70% {left:490px;transform: rotate(10deg)}
+  80% {left:560px;transform: rotate(0deg)}
+  90% {left:630px;transform: rotate(10deg)}
+  100% {left:700px;transform: rotate(0deg);transform: rotateY(180deg)}
+}
+.animation{
+  position: relative;
+  width:150px;
+  animation-name: dtspro2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
